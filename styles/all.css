@@ -1,0 +1,311 @@
+body, h1 {
+margin: 0 auto;
+font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+
+}
+
+#homePic {
+	height: 547px;
+	background-image: url(../images/mainApplefestLogo.jpg);
+	/* Image Credit: http://www.downtownithaca.com/local/image_files/large/57d339707c0bb.jpg */
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+
+	width:100%;
+
+}
+
+
+
+.menu ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.menu li {
+
+	list-style-type: none;
+	display: inline;
+}
+.header a, .homecontainer a {
+	color:white;
+}
+a {
+	text-decoration: none;
+}
+.link {
+	color: #74b3bc;
+}
+.link:hover {
+	color: rgb(247, 61, 65);
+}
+.menu li a {
+	color: white;
+	text-align: center;
+	padding: 40px 16px;
+	font-size: 30px;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+.menu {
+	padding-top: 10px;
+}
+
+.menu li a:hover{
+	color: #74b3bc;
+}
+h1{
+	font-size: 50px;
+	color: white;
+}
+
+.header {
+	background-color: rgb(247, 61, 65);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+#date {
+	color: white;
+}
+h1 a:hover {
+	color: #74b3bc;
+}
+
+.active{
+	color: black;
+}
+
+.content-wrap {
+	text-align: center;
+	display: flex;
+  	flex-direction: row;
+
+}
+.events {
+	flex: 1.2;
+  order: 1;
+
+
+}
+.transport {
+	flex: 1;
+  order: 2;
+
+
+}
+table {
+  width: 90%;
+  margin-left: 5%
+
+
+}
+table, th, td {
+
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+   border-collapse: collapse;
+   text-align: left;
+}
+
+col {
+	width: 27%;
+}
+
+col:first-child {
+	width: 19%;
+	border-right: 3px solid black;
+
+
+}
+
+
+th {
+	background-color: rgb(247, 61, 65);
+	color: white;
+	font-size: 20px;
+	border-top: 1px solid black;
+	padding: 10px;
+}
+td {
+	padding: 10px;
+}
+
+#close {
+	border-bottom: 1px solid black;
+}
+#close, #open {
+	color: rgb(247, 61, 65);
+	font-weight: bold;
+	font-size: 16px;
+	padding-left: 10px;
+
+}
+
+.perf {
+	font-size: 12px;
+
+}
+.perf td {
+	padding: 5px 10px;
+}
+#giveaway {
+	color: rgb(247, 61, 65);
+}
+
+tr:nth-child(even) {
+	background-color: #c0d3d6;
+}
+#timeHead {
+	background-color: #6e8184;
+}
+
+.transport p {
+	padding: 0% 15%;
+	text-align: justify;
+}
+
+.transport, .events {
+	padding-top: 5%;
+}
+h3 {
+	color: rgb(247, 61, 65);
+	margin-top: 0px;
+}
+.bold {
+	font-weight: bold;
+}
+
+
+.dot {
+	color: #74b3bc;
+}
+.pagebody {
+	margin: 3% 20%;
+}
+
+h2{
+	color: #74b3bc;
+	text-align: center;
+}
+.menu .active {
+	color: #74b3bc;
+}
+.pagebody p{
+	line-height: 2.0;
+}
+figure {
+	text-align: center;
+}
+.vendor-flex{
+	display: flex;
+  	flex-direction: column;
+  	text-align: center;
+}
+.feature{
+	padding-top: 15px;
+	flex: 1;
+	order:1;
+}
+.all-flex {
+	flex: 2;
+	order: 2;
+	display: flex;
+	flex-direction: row;
+}
+.craft {
+	flex:1;
+	order:1;
+}
+.food {
+	flex:1;
+	order:1;
+}
+.farmer {
+	flex:1;
+	order:1;
+}
+.apply {
+	text-align: center;
+	font-size: 20px;
+}
+.all-flex{
+	margin: 0% 20%;
+}
+.craft li, .food li, .farmer li{
+	text-align: center;
+	list-style-type: none;
+}
+.craft ul, .food ul, .farmer ul {
+	padding-left: 0px;
+}
+.feature p{
+	text-align: justify;
+	margin: 3% 20%;
+}
+
+/* Styling for Mobile Devices */
+@media only screen and (max-width: 600px) {
+
+
+
+
+.menu li a {
+
+	padding: 10px 5px;
+	font-size: 13px;
+}
+.menu {
+	padding-top: 5px;
+}
+
+
+h1{
+	font-size: 25px;
+
+}
+
+.map {
+	width: 400px;
+}
+figure {
+	margin: 0px;
+}
+.content-wrap {
+
+  	flex-direction: column;
+
+}
+th {
+	font-size: 15px;
+
+}
+td {
+	font-size: 10px;
+
+}
+#close, #open {
+	font-size: 12px;
+
+
+}
+.pagebody {
+	margin: 15px;
+	font-size: 12px;
+}
+.all-flex {
+	overflow: hidden;
+	flex-direction: column;
+	margin: 0% 5%;
+}
+.feature p{
+	margin: 0% 5%;
+}
+#homePic {
+
+	background-size: 1200px 550px;
+}
+
+	}
