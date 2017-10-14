@@ -1,8 +1,49 @@
 body, h1 {
-margin: 0 auto;
-font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	margin: 0 auto;
+	font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 
 }
+#vendorPic {
+	width: 50%;
+}
+.feature .source{
+text-align: center;
+margin: 0 auto;
+}
+
+#about-flex{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+#photos1 {
+	flex: .5;
+	order: 1;
+	margin-top: 10px;
+
+}
+#photos2 {
+	flex: .5;
+	order: 3;
+	margin-top: 10px;
+}
+#pagebody {
+	flex: 4;
+	order: 2;
+text-align: justify;
+padding-left: 15px;
+padding-right: 10px;
+
+}
+.aboutPic {
+	width: 250px;
+}
+#photos1 figure, #photos2 figure{
+	width: 250px;
+	overflow-x:auto;
+	margin: 0px 10px 0px 10px;
+}
+
 
 #homePic {
 	height: 547px;
@@ -17,8 +58,17 @@ font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,san
 	width:100%;
 
 }
-
-
+figure .source {
+text-align: center;
+margin: 0 auto;
+}
+.source {
+	padding-left: 5px;
+	font-size: 8px;
+}
+.transport .source {
+text-align: center;
+}
 
 .menu ul {
 	margin: 0;
@@ -74,40 +124,37 @@ h1 a:hover {
 	color: #74b3bc;
 }
 
-.active{
-	color: black;
-}
 
 .content-wrap {
 	text-align: center;
 	display: flex;
-  	flex-direction: row;
+	flex-direction: row;
 
 }
 .events {
 	flex: 1.2;
-  order: 1;
+	order: 1;
 
 
 }
 .transport {
 	flex: 1;
-  order: 2;
+	order: 2;
 
 
 }
 table {
-  width: 90%;
-  margin-left: 5%
+	width: 90%;
+	margin-left: 5%
 
 
 }
 table, th, td {
 
-   border-left: 1px solid black;
-   border-right: 1px solid black;
-   border-collapse: collapse;
-   text-align: left;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
 }
 
 col {
@@ -136,7 +183,7 @@ td {
 #close {
 	border-bottom: 1px solid black;
 }
-#close, #open {
+#close, .open {
 	color: rgb(247, 61, 65);
 	font-weight: bold;
 	font-size: 16px;
@@ -166,9 +213,24 @@ tr:nth-child(even) {
 	padding: 0% 15%;
 	text-align: justify;
 }
+.transport figure {
+	margin-bottom: 2px;
+}
 
 .transport, .events {
-	padding-top: 5%;
+	padding-top: 2%;
+}
+#tablePhoto figure{
+	display: inline;
+	margin: 0 auto;
+margin-top: 5px;
+
+}
+#tablePhoto {
+margin-top: 5px;
+}
+.tablepic {
+width: 180px;
 }
 h3 {
 	color: rgb(247, 61, 65);
@@ -182,9 +244,7 @@ h3 {
 .dot {
 	color: #74b3bc;
 }
-.pagebody {
-	margin: 3% 20%;
-}
+
 
 h2{
 	color: #74b3bc;
@@ -193,7 +253,7 @@ h2{
 .menu .active {
 	color: #74b3bc;
 }
-.pagebody p{
+#pagebody p{
 	line-height: 2.0;
 }
 figure {
@@ -201,8 +261,8 @@ figure {
 }
 .vendor-flex{
 	display: flex;
-  	flex-direction: column;
-  	text-align: center;
+	flex-direction: column;
+	text-align: center;
 }
 .feature{
 	padding-top: 15px;
@@ -249,63 +309,103 @@ figure {
 /* Styling for Mobile Devices */
 @media only screen and (max-width: 600px) {
 
+	.menu li a {
+
+		padding: 10px 5px;
+		font-size: 13px;
+	}
+	.menu {
+		padding-top: 5px;
+	}
 
 
-
-.menu li a {
-
-	padding: 10px 5px;
-	font-size: 13px;
-}
-.menu {
-	padding-top: 5px;
-}
-
-
-h1{
-	font-size: 25px;
-
-}
-
-.map {
-	width: 400px;
-}
-figure {
-	margin: 0px;
-}
-.content-wrap {
-
-  	flex-direction: column;
-
-}
-th {
-	font-size: 15px;
-
-}
-td {
-	font-size: 10px;
-
-}
-#close, #open {
-	font-size: 12px;
-
-
-}
-.pagebody {
-	margin: 15px;
-	font-size: 12px;
-}
-.all-flex {
-	overflow: hidden;
-	flex-direction: column;
-	margin: 0% 5%;
-}
-.feature p{
-	margin: 0% 5%;
-}
-#homePic {
-
-	background-size: 1200px 550px;
-}
+	h1{
+		font-size: 25px;
 
 	}
+
+	.map {
+		width: 400px;
+	}
+	figure {
+		margin: 0px;
+	}
+	.content-wrap {
+
+		flex-direction: column;
+
+	}
+	th {
+		font-size: 15px;
+
+	}
+	td {
+		font-size: 10px;
+
+	}
+	#close, .open {
+		font-size: 12px;
+
+
+	}
+	#pagebody {
+
+		font-size: 12px;
+	}
+	.all-flex {
+		overflow: hidden;
+		flex-direction: column;
+		margin: 0% 5%;
+	}
+	.feature p{
+		margin: 0% 5%;
+	}
+	#homePic {
+
+		background-size: 1200px 550px;
+	}
+	.source {
+		font-size: 5px;
+}
+
+
+#about-flex{
+
+	flex-direction: column;
+
+}
+
+#photos1,#photos2 {
+	flex: .1;
+
+}
+#pagebody {
+flex: 5;
+}
+
+.aboutPic {
+	width: 100px;
+}
+#photos1 figure, #photos2 figure{
+	display: inline;
+	width: 100px;
+	overflow-x:auto;
+	margin: 0px 5px 0px 5px;
+}
+#tablePhoto figure{
+	display: inline;
+
+
+}
+#tablePhoto {
+margin-right: 0;
+
+}
+.transport figure {
+width: 100%;
+}
+.tablepic {
+width: 100px;
+}
+
+}
