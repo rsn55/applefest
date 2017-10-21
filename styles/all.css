@@ -7,8 +7,11 @@ body, h1 {
 	width: 50%;
 }
 .feature .source{
-text-align: center;
-margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
+}
+.source{
+	text-align: center;
 }
 
 #about-flex{
@@ -30,9 +33,9 @@ margin: 0 auto;
 #pagebody {
 	flex: 4;
 	order: 2;
-text-align: justify;
-padding-left: 15px;
-padding-right: 10px;
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 10px;
 
 }
 .aboutPic {
@@ -59,15 +62,15 @@ padding-right: 10px;
 
 }
 figure .source {
-text-align: center;
-margin: 0 auto;
+	text-align: center;
+	margin: 0 auto;
 }
 .source {
 	padding-left: 5px;
 	font-size: 8px;
 }
 .transport .source {
-text-align: center;
+	text-align: center;
 }
 
 .menu ul {
@@ -104,11 +107,13 @@ a {
 }
 
 .menu li a:hover{
-	color: #74b3bc;
+	color: black;
+
 }
 h1{
 	font-size: 50px;
 	color: white;
+	text-shadow: 2px 2px black;
 }
 
 .header {
@@ -122,6 +127,8 @@ h1{
 }
 h1 a:hover {
 	color: #74b3bc;
+
+
 }
 
 
@@ -223,14 +230,18 @@ tr:nth-child(even) {
 #tablePhoto figure{
 	display: inline;
 	margin: 0 auto;
-margin-top: 5px;
+	margin-top: 5px;
 
 }
 #tablePhoto {
-margin-top: 5px;
+	margin-top: 35px;
+}
+#stage {
+	font-size: 13px;
+	margin-top: 5px;
 }
 .tablepic {
-width: 180px;
+	width: 180px;
 }
 h3 {
 	color: rgb(247, 61, 65);
@@ -245,13 +256,17 @@ h3 {
 	color: #74b3bc;
 }
 
-
+.events, .transport {
+	padding-top: 20px;
+}
 h2{
 	color: #74b3bc;
 	text-align: center;
 }
 .menu .active {
-	color: #74b3bc;
+	color: black;
+
+
 }
 #pagebody p{
 	line-height: 2.0;
@@ -274,6 +289,20 @@ figure {
 	order: 2;
 	display: flex;
 	flex-direction: row;
+
+
+}
+.craft li, .farmer li, .food li{
+	text-align: left;
+}
+.craft ul , .farmer ul, .food ul{
+	margin-left: 30px;
+}
+.craft, .farmer, .food {
+	margin-right: 30px;
+}
+#shortSource {
+	margin: 0px 100px 20px 100px;
 }
 .craft {
 	flex:1;
@@ -292,12 +321,11 @@ figure {
 	font-size: 20px;
 }
 .all-flex{
-	margin: 0% 20%;
+	margin: 0% 18% 0% 20%;
+	padding-top: 10px;
 }
-.craft li, .food li, .farmer li{
-	text-align: center;
-	list-style-type: none;
-}
+
+
 .craft ul, .food ul, .farmer ul {
 	padding-left: 0px;
 }
@@ -312,7 +340,7 @@ figure {
 	.menu li a {
 
 		padding: 10px 5px;
-		font-size: 13px;
+		font-size: 18px;
 	}
 	.menu {
 		padding-top: 5px;
@@ -320,7 +348,7 @@ figure {
 
 
 	h1{
-		font-size: 25px;
+		font-size: 27px;
 
 	}
 
@@ -366,46 +394,53 @@ figure {
 	}
 	.source {
 		font-size: 5px;
-}
+	}
 
 
-#about-flex{
+	#about-flex{
 
-	flex-direction: column;
+		flex-direction: column;
 
-}
+	}
 
-#photos1,#photos2 {
-	flex: .1;
+	#photos1,#photos2 {
+		flex: .1;
 
-}
-#pagebody {
-flex: 5;
-}
+	}
+	#pagebody {
+		flex: 5;
+	}
 
-.aboutPic {
-	width: 100px;
-}
-#photos1 figure, #photos2 figure{
-	display: inline;
-	width: 100px;
-	overflow-x:auto;
-	margin: 0px 5px 0px 5px;
-}
-#tablePhoto figure{
-	display: inline;
+	.aboutPic {
+		width: 100px;
+	}
+	#photos1 figure, #photos2 figure{
+		display: inline;
+		width: 100px;
+		overflow-x:auto;
+		margin: 0px 5px 0px 5px;
+	}
+	#tablePhoto figure{
+		display: inline;
 
 
-}
-#tablePhoto {
-margin-right: 0;
+	}
+	#tablePhoto {
+		margin-right: 0;
+		margin-top: 20px;
+	}
+	.transport figure {
+		width: 100%;
 
-}
-.transport figure {
-width: 100%;
-}
-.tablepic {
-width: 100px;
-}
+	}
+	.tablepic {
+		width: 100px;
+	}
+	.transport {
+		padding-top: 30px;
+	}
+	.map {
+		width: 100%;
+	}
 
 }
